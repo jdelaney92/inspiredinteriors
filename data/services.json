@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "id": "kitchen-remodeling",
+      "title": "Kitchen remodeling",
+      "body": "Cabinet updates, countertops, backsplashes, lighting, and layout improvements — built for how you cook and gather."
+    },
+    {
+      "id": "bathroom-renovation",
+      "title": "Bathroom renovation",
+      "body": "Showers, vanities, tile work, and fixtures that turn dated baths into comfortable, modern spaces."
+    },
+    {
+      "id": "interior-remodeling",
+      "title": "Interior remodeling",
+      "body": "Living rooms, bedrooms, flooring, trim, and paint — cohesive updates that refresh the whole home."
+    },
+    {
+      "id": "exterior-updates",
+      "title": "Exterior updates",
+      "body": "Siding, porches, decks, and curb-appeal improvements that protect your home and boost first impressions."
+    },
+    {
+      "id": "custom-carpentry",
+      "title": "Custom carpentry",
+      "body": "Built-ins, shelving, trim details, and finish work crafted to fit your space precisely."
+    },
+    {
+      "id": "whole-home-refresh",
+      "title": "Whole-home refresh",
+      "body": "Phased remodel plans for homeowners ready to update multiple rooms with one trusted contractor."
+    }
+  ]
+}

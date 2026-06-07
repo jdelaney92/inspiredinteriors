@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Remodeled interior">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a6b5a"/>
+      <stop offset="50%" stop-color="#2a3f35"/>
+      <stop offset="100%" stop-color="#1c2421"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="100%" stop-color="#5c4a36"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <rect y="620" width="1600" height="280" fill="url(#floor)"/>
+  <rect x="200" y="180" width="500" height="380" rx="8" fill="#f7f4ef" opacity="0.15"/>
+  <rect x="900" y="220" width="420" height="320" rx="8" fill="#f7f4ef" opacity="0.1"/>
+  <circle cx="800" cy="420" r="80" fill="#b8860b" opacity="0.35"/>
+  <text x="800" y="440" text-anchor="middle" fill="#f7f4ef" font-family="Georgia, serif" font-size="48" font-weight="700">Inspired Interiors</text>
+</svg>

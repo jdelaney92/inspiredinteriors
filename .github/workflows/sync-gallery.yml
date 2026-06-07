@@ -1,0 +1,38 @@
+name: Sync gallery carousel
+
+on:
+  schedule:
+    - cron: "15 9,21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Playwright Chromium
+        run: |
+          npm install playwright@1.49.1
+          npx playwright install chromium --with-deps
+          echo "PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=$(npx playwright executable-path chromium)" >> $GITHUB_ENV
+
+      - name: Fetch gallery images from Facebook
+        run: node scripts/fetch-gallery-images.mjs
+        env:
+          CI: true
+          GALLERY_RECENCY_MONTHS: "3"
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+
+      - name: Commit gallery updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync gallery carousel images"
+          file_pattern: data/gallery.json assets/images/gallery/* assets/images/hero.jpg assets/images/about-backdrop.jpg assets/images/facebook-cover.jpg assets/images/logo.jpg assets/images/favicon.jpg assets/images/apple-touch-icon.jpg

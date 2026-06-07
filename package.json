@@ -1,0 +1,15 @@
+{
+  "name": "inspiredinteriors",
+  "version": "1.0.0",
+  "description": "Marketing site for Inspired Interiors remodeling — Town Creek, Alabama.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/dev-server.mjs",
+    "sync:gallery": "node scripts/fetch-gallery-images.mjs",
+    "download:facebook": "node scripts/download-facebook-assets.mjs",
+    "download:gallery": "node scripts/download-gallery-fullres.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "^1.60.0"
+  }
+}
