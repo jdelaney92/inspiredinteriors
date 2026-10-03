@@ -4,10 +4,10 @@
   },
   "recency": {
     "months": 3,
-    "cutoff": "2026-07-02T15:46:23.341Z",
+    "cutoff": "2026-07-03T00:28:02.805Z",
     "graphApi": false
   },
-  "fetchedAt": "2026-10-02T15:46:58.576Z",
+  "fetchedAt": "2026-10-03T00:28:39.944Z",
   "slideCount": 1,
   "slides": [
     {
@@ -16,7 +16,7 @@
       "alt": "Inspired Interiors remodeling project",
       "source": "facebook-photos",
       "addedAt": "2026-09-08T13:37:08.314Z",
-      "lastSeenAt": "2026-10-02T15:46:58.463Z",
+      "lastSeenAt": "2026-10-03T00:28:39.832Z",
       "postedAt": null
     }
   ]
